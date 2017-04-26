@@ -53,17 +53,27 @@
 
 	<fieldset>
 	    <legend>Reason for complaint </legend>
-	    <label for="date"> Date </label>
-	    <input type="date" name="date" id="date" required>
-	    <label for="subject"> Subject </label>
-	    <select id="subject">
-		<option value="hardware">Hardware</option>
-		<option value="software">Software</option>
-		<option value="delivery">Delivery</option>
-		<option value="other" > Other</option>
-	    </select>
-	    <label>Message</label>
-	    <textarea>Your message</textarea>
+		<table class="table">
+		   <tr>
+		      	<td><label for="date"> Date </label></td>
+		     	<td><input type="date" name="date" id="date" required></td>
+	    	   </tr>
+		   <tr>
+			<td><label for="subject"> Subject </label></td>
+			<td>
+			    <select id="subject">
+				<option value="hardware">Hardware</option>
+				<option value="software">Software</option>
+				<option value="delivery">Delivery</option>
+				<option value="other" > Other</option>
+			    </select>  
+			</td>
+		    </tr>
+	            <tr>
+		 	<td><label>Message</label></td>
+		        <td><textarea rows="4" cols="70">Your message</textarea></td>
+		    </tr>
+		</table>
 	    <input type="submit" name="submit" value="send" >
 	</fieldset> 
 
