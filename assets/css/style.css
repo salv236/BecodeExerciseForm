@@ -1,13 +1,23 @@
 html, body{
 	width:70%;
 	margin:auto;
+	background-color : #f7f7f7;
 } 
+
+.container {
+	background-color : #fff;
+	border : 1px solid #ddd;
+	padding : 0% 2% 0% 2%;
+}
+
 
 .main-header{
 	display: inline-block;
 	height:200px;
 	margin-top:40px;
+
 }
+
 
 .form-container{
 	display:block;
@@ -15,7 +25,7 @@ html, body{
 }
 
 header h1 {
-	font-size: 190%;
+	font-size: 170%;
 }
 
 header img {
@@ -34,4 +44,16 @@ header img {
 
 textarea {
 	resize :none;
+	border :  1px solid #ddd;
+	box-shadow : 5px 5px 5px #ddd;
 }
+
+input, select {
+	border :0;
+	border-bottom :1px solid #ddd;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}	 
+
