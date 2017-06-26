@@ -2,10 +2,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UFT-8">
+		<meta charset="UTF-8">
 		<link rel="stylesheet" href="assets/css/bootstrap.css">
 		<link rel="stylesheet" href="assets/css/style.css" />
 		<title>Technical support Hackers poulette</title>
+		<!--[if lt IE 9]>
+	  		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  		<![endif]-->
 	</head>
 	<body>
   		<div class="container">
@@ -29,7 +32,7 @@
 		{ 
 			$_POST['mail'] = htmlspecialchars($_POST['mail']); // On rend inoffensives les balises HTML que le visiteur a pu rentrer
 
-									  // { Minium caractère, Maximum caractère }	
+						// { Minium caractère, Maximum caractère }	
     			    	if (preg_match("#^[a-z0-9._-]+@[a-z0-9._-]{2,}\.[a-z]{2,4}$#", $_POST['mail'])) 
 				{
        				 $mail = $_POST['mail'];
@@ -61,7 +64,7 @@
 		$totaladdition = $additionNumber + $additionNumber2;
 
 
-		print_r(" Hello " . $name . "<br />");
+		echo(" Hello " . $name . "<br />");
 		echo "you name is " . $name ."<br>";
 		echo "you lastname is " . $lastname ."<br>";
 		echo "mail : " . $mail ."<br>";
@@ -76,7 +79,6 @@
 
 	
 		echo  "Your number of complaints " . $totaladdition . " <br />";	
-
 
 		?> 
 		
