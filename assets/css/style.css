@@ -36,7 +36,6 @@ html, body{
 	margin-top: -60px;
 }
 
-
 	.table thead > tr > th,
 	.table tbody > tr > th,
 	.table tfoot > tr > th,
@@ -44,6 +43,19 @@ html, body{
 	.table tbody > tr > td,
 	.table tfoot > tr > td   {
 	border-top:0; 
+	}
+
+	.indent-left{
+		margin-left:2%;
+	}
+
+	#name, #lastName {
+		width:35%;
+	}
+
+	#customerNumber, #productId{
+		width:32%;
+		padding-top:2%;
 	}
 
 textarea {

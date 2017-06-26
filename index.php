@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="UFT-8">
+		<meta charset="UTF-8">
 		<link rel="stylesheet" href="assets/css/bootstrap.css">
 		<link rel="stylesheet" href="assets/css/style.css" />
 		<title>Technical support Hackers poulette</title>
+		<!--[if lt IE 9]>
+	  		<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  		<![endif]-->
 	</head>
 	<body>
   		<div class="container">
@@ -25,13 +28,52 @@
 	    <form method="post" action="traitement.php">
 			<fieldset>
 		   		<legend>Customer Details</legend>
+
+		   		<div class="row">
+					
+		   			<div class="col-md-12 indent-left "> 
+
+		   			<label for="name"> Your name </label>
+					<input type="text" name="name" id="name" required aria-required="true">
+
+					<label for="lastName"> Last Name </label>
+				          <input type="text" name="lastName" id="lastName" required aria-required="true">
+
+		   			</div>
+
+		   		</div> <!--row-->
+
+		   		<div class="row"> 
+
+		   			<div class="col-md-12 indent-left">
+					
+					<label for="customerNumber"> Customer number </label>
+				   	  <input type="number" name="customerNumber" id="customerNumber">
+				          <label for="productId"> Product Id </label>
+				          <input type="number" name="productId" id="productId" >
+
+		   			</div>
+
+		   			<div class="row"> 
+
+		   			<div class="col-md-12 indent-left">
+					
+					  <label for="mail">Email</label>
+			          <input type="email" id="mail" name="mail" required aria-required="true">
+			          <label for="country">Country</label>
+		   	  		  <input type="text" name="country" id="country" required aria-required="true">
+
+		   			</div>
+
+
+		   		</div>
 		    
-		      	<table class="table" id="noborder">
+		      <!--	<table class="table" id="noborder">
 					<tr>
 					  <td><label for="name"> Your name </label></td>
-				   	  <td><input type="text" name="name" id="name" required></td>
+				   	  <td><input type="text" name="name" id="name" required aria-required="true"></td>
 					  <td><label for="lastName"> Last Name </label></td>
-				          <td><input type="text" name="lastName" id="lastName" required></td>
+				          <td><input type="text" name="lastName" id="lastName" required aria-required="true"></td>
 					</tr>
 					<tr>
 				          <td><label for="customerNumber"> Customer number </label></td>
@@ -41,17 +83,17 @@
 					</tr>
 			        <tr>
 			          <td> <label for="mail">Email</label></td>
-			          <td> <input type="email" id="mail" name="mail" required></td>
+			          <td> <input type="email" id="mail" name="mail" required aria-required="true"></td>
 			          <td><label for="country">Country</label></td>
-		   	  		  <td> <input type="text" name="country" id="country" required></td>
+		   	  		  <td> <input type="text" name="country" id="country" required aria-required="true"></td>
 					</tr>
 					<tr>
 					   <td><label for="tel">Tel</label></td>
-					   <td><input type="tel" name="tel" id="tel" required></td>
+					   <td><input type="tel" name="tel" id="tel" required aria-required="true"></td>
 				   	   <td><input type="radio" id="genderM" name="gender" value="Male" checked><label for="genderM"> Male</label></td>
 				        <td><input type="radio" id="genderF" name="gender" value="Female"> <label for="genderF">Female </label></td>
 					</tr>
-		    	</table>
+		    	</table> -->
 		 
 			</fieldset>
 			
@@ -62,7 +104,7 @@
 				<table class="table">
 				   <tr>
 				      	<td><label for="date"> Date </label></td>
-				     	<td><input type="date" name="date" id="date" required></td>
+				     	<td><input type="date" name="date" id="date" required aria-required="true"></td>
 			    	   </tr>
 				   <tr>
 					<td><label for="subject"> Subject </label></td>
@@ -77,7 +119,7 @@
 				    </tr>
 			            <tr>
 				 	<td><label>Message</label></td>
-				        <td><textarea rows="4" cols="60" name="message" >Your message</textarea></td>
+				        <td><textarea rows="4" cols="60" name="message" required aria-required="true" >Your message</textarea></td>
 				    </tr>
 				</table>
 			    <input type="submit" name="submit" value="send" >
