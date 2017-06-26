@@ -53,10 +53,22 @@ html, body{
 		width:35%;
 	}
 
-	#customerNumber, #productId{
+	 #mail, #country{
+	 	width:40%;
+	 }
+
+	#customerNumber, #productId {
 		width:32%;
 		padding-top:2%;
 	}
+
+	 #mail, #country, #tel, .indent-top {
+	 	padding-top:2%;
+	 }
+
+	 #complaint{
+	 	padding-top:5%;
+	 }
 
 textarea {
 	resize :none;
