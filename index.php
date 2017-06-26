@@ -51,56 +51,51 @@
 				   	  <input type="number" name="customerNumber" id="customerNumber">
 				          <label for="productId"> Product Id </label>
 				          <input type="number" name="productId" id="productId" >
+		   			</div>	
 
-		   			</div>
+		   		</div>
 
-		   			<div class="row"> 
+				<div class="row"> 
 
-		   			<div class="col-md-12 indent-left">
-					
-					  <label for="mail">Email</label>
+				<div class="col-md-12 indent-left">
+
+		   		<label for="mail">Email</label>
 			          <input type="email" id="mail" name="mail" required aria-required="true">
 			          <label for="country">Country</label>
 		   	  		  <input type="text" name="country" id="country" required aria-required="true">
 
-		   			</div>
+		   	    </div>
 
+		   	  </div> <!--row-->
 
-		   		</div>
-		    
-		      <!--	<table class="table" id="noborder">
-					<tr>
-					  <td><label for="name"> Your name </label></td>
-				   	  <td><input type="text" name="name" id="name" required aria-required="true"></td>
-					  <td><label for="lastName"> Last Name </label></td>
-				          <td><input type="text" name="lastName" id="lastName" required aria-required="true"></td>
-					</tr>
-					<tr>
-				          <td><label for="customerNumber"> Customer number </label></td>
-				   	  <td><input type="number" name="customerNumber" id="customerNumber" ></td>
-				          <td><label for="productId"> Product Id </label></td>
-				          <td><input type="number" name="productId" id="productId" ></td>
-					</tr>
-			        <tr>
-			          <td> <label for="mail">Email</label></td>
-			          <td> <input type="email" id="mail" name="mail" required aria-required="true"></td>
-			          <td><label for="country">Country</label></td>
-		   	  		  <td> <input type="text" name="country" id="country" required aria-required="true"></td>
-					</tr>
-					<tr>
-					   <td><label for="tel">Tel</label></td>
-					   <td><input type="tel" name="tel" id="tel" required aria-required="true"></td>
-				   	   <td><input type="radio" id="genderM" name="gender" value="Male" checked><label for="genderM"> Male</label></td>
-				        <td><input type="radio" id="genderF" name="gender" value="Female"> <label for="genderF">Female </label></td>
-					</tr>
-		    	</table> -->
+		   	  <div class="row"> 
+
+				<div class="col-md-12 indent-left">
+
+		   		<label for="tel">Tel</label>
+					   <input type="tel" name="tel" id="tel" required aria-required="true">
+
+		   	    </div>
+
+		   	  </div> <!--row-->
+
+		   	  <div class="row"> 
+
+				<div class="col-md-12 indent-left indent-top">
+
+		   				<input type="radio" id="genderM" name="	gender" value="Male" checked><label for="genderM"> Male</label>
+				        <input type="radio" id="genderF" name="gender" value="Female"> <label for="genderF">Female </label>
+
+		   	    </div>
+
+		   	  </div> <!--row-->
 		 
 			</fieldset>
 			
 			<!--Debut de formulaire - partie 2-->
 
 			<fieldset>
-			    <legend>Reason for complaint </legend>
+			    <legend id="complaint">Reason for complaint </legend>
 				<table class="table">
 				   <tr>
 				      	<td><label for="date"> Date </label></td>
