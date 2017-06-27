@@ -35,9 +35,6 @@ if (isset($_POST['mail']))
 		$result[$key] = trim($result[$key]); 
 
 	}
-
 		}
-
-
 
 ?>
