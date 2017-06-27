@@ -83,8 +83,10 @@
 
 				<div class="col-md-12 indent-left indent-top">
 
-		   				<input type="radio" id="genderM" name="	gender" value="Male" checked><label for="genderM"> Male</label>
-				        <input type="radio" id="genderF" name="gender" value="Female"> <label for="genderF">Female </label>
+		   				<label for="genderM"> Male</label>
+		   				<input type="radio" id="genderM" name="gender" value="Male" checked>
+				        <label for="genderF">Female </label>
+				        <input type="radio" id="genderF" name="gender" value="Female"> 
 
 		   	    </div>
 
